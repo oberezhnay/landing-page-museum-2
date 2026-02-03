@@ -1,0 +1,14 @@
+.scrollTop {
+  position: fixed;
+  display: flex;
+  right: 20px;
+  bottom: 150px;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  border: 1px solid $green-accent-color;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../images/icons/icon-arrow.svg');
+}

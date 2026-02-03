@@ -1,0 +1,21 @@
+.galery {
+  .img-big {
+    display: none;
+  }
+
+  @include on-desctop {
+    img {
+      width: 100%;
+
+      @include hover(transform, scale(1.05));
+    }
+
+    .img-big {
+      display: flex;
+    }
+
+    .img-small {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+.menu {
+  background-size: cover;
+  background-color: $green-accent-color;
+  color: #fff;
+  padding-top: 27px;
+  width: 100vw;
+
+  .container {
+    display: grid;
+    gap: 24px;
+    margin-bottom: 27px;
+
+    @include page-grid;
+  }
+
+  &__top {
+    grid-column: 1/-1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    gap: 28px;
+
+    @include on-tablet {
+      grid-column: span 3;
+      border-bottom: none;
+      border-right: 1px solid rgba(255, 255, 255, 0.5);
+      margin-right: 18px;
+    }
+
+    @include on-desctop {
+      grid-column: span 6;
+      border: none;
+      .menu__list {
+        font-weight: 500;
+        font-size: 22px;
+        gap: 31px;
+      }
+      .menu__item {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__bottom {
+    grid-column: 1/-1;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+
+    @include on-tablet {
+      grid-column: span 3;
+      .shedule__wrapper {
+        display: flex;
+        gap: 38px;
+      }
+      .shedule__text {
+        max-width: 170px;
+      }
+    }
+
+    @include on-desctop {
+      grid-column: span 6;
+      border-left: 1px solid rgba(255, 255, 255, 0.5);
+      padding-left: 100px;
+    }
+  }
+
+  @include on-tablet {
+    padding-top: 40px;
+  }
+}
+
+.menu__list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  display: flex;
+  gap: 28px;
+  .menu__item {
+    margin-bottom: 24px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    cursor: pointer;
+
+    @include hover(transform, scale(1.2));
+  }
+}

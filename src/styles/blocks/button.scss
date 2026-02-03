@@ -1,0 +1,39 @@
+.btn {
+  border: 1px solid $green-accent-color;
+  display: flex;
+  height: 50px;
+
+  &__title {
+    color: $black-accent-color;
+    text-transform: uppercase;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include hover(transform, scale(1.2));
+  }
+
+  &__square {
+    width: 50px;
+    background-image: url('../images/icons/icon-button.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-self: right;
+    border: none;
+    cursor: pointer;
+  }
+
+  @include on-tablet {
+    width: 270px;
+    height: 70px;
+
+    &__square {
+      width: 70px;
+    }
+  }
+
+  @include on-desctop {
+    margin-left: auto;
+  }
+}

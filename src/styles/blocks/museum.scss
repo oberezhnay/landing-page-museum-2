@@ -1,0 +1,19 @@
+.museum {
+  &__title {
+    font-size: 45px;
+    line-height: 100%;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @include on-tablet {
+      font-size: 54px;
+      text-align: left;
+    }
+
+    @include on-desctop {
+      font-size: 72px;
+      line-height: 120%;
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.footer {
+  margin-top: 50px;
+  color: $black-accent-color;
+
+  &__wrapper {
+    @include on-desctop {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 30px;
+    }
+  }
+
+  &__top {
+    @include on-tablet {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    @include on-desctop {
+      grid-column: 1/7;
+    }
+  }
+
+  &__top-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    @include on-tablet {
+      display: block;
+      grid-column: 1/2;
+
+      .icons__wrapper {
+        margin-top: 62px;
+      }
+    }
+
+    .icons__wrapper {
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  &__info {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include on-tablet {
+      grid-column: 2/6;
+    }
+
+    .menu__text {
+      margin-top: 20px;
+    }
+  }
+
+  &__contacts {
+    .contacts__link {
+      display: block;
+      text-decoration: none;
+      color: $black-accent-color;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 150%;
+
+      @include hover(transform, scale(1.2));
+    }
+  }
+
+  &__bottom {
+    margin-top: 70px;
+    padding-top: 40px;
+    border-top: 1px solid #1a5a4c80;
+
+    @include on-tablet {
+      @include on-tablet {
+        padding-top: 64px;
+        margin-top: 64px;
+      }
+    }
+
+    @include on-desctop {
+      grid-column: 7/-1;
+      border-top: none;
+      border-left: 1px solid #1a5a4c80;
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+
+  &__menu {
+    .menu__list {
+      display: grid;
+
+      @include page-grid;
+
+      .menu__item {
+        color: $black-accent-color;
+      }
+
+      .items-first {
+        @include on-tablet {
+          grid-column: 2/4;
+        }
+      }
+
+      .items-second {
+        @include on-tablet {
+          grid-column: 4/6;
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    margin: 80px 0 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 141%;
+
+    @include on-tablet {
+      margin: 120px 0 36px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

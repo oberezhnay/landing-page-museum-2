@@ -1,0 +1,90 @@
+.header {
+  display: block;
+  gap: 20px;
+
+  &__top {
+    background-image: url('../images/header-bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+
+    @include on-tablet {
+      flex: 1;
+      height: 384px;
+    }
+
+    @include on-desctop {
+      height: 100vh;
+    }
+  }
+
+  &__content {
+    padding-top: 9px;
+
+    @include on-tablet {
+      padding-top: 15px;
+    }
+  }
+
+  &__bottom {
+    margin-top: 20px;
+
+    .museum__title {
+      @include on-desctop {
+        margin-bottom: 90px;
+      }
+    }
+    .podii__wrapper {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    .podii {
+      opacity: 0;
+      color: $main-placeholder-color;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      transform: rotate(-90deg);
+      transform-origin: 28% -121%;
+
+      .line {
+        width: 70px;
+        height: 1px;
+        background-color: $main-placeholder-color;
+        margin-right: 20px;
+      }
+
+      @include on-desctop {
+        opacity: 1;
+      }
+    }
+
+    @include on-tablet {
+      flex: 1;
+      align-self: flex-end;
+      margin-bottom: 18px;
+    }
+
+    @include on-desctop {
+      margin-bottom: 118px;
+      .container {
+        padding-inline: 0;
+        padding-left: 55px;
+      }
+    }
+  }
+
+  @include on-tablet {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  @include on-desctop {
+    gap: 30px;
+  }
+}

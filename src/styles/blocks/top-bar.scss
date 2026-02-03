@@ -1,0 +1,39 @@
+.top-bar {
+  display: flex;
+
+  &__logo {
+    margin: 0 auto;
+
+    @include on-desctop {
+      margin: 0;
+    }
+    &-link {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: Montserrat, sans-serif;
+      color: $black-accent-color;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 100%;
+      cursor: pointer;
+      display: flex;
+
+      @include hover(transform, scale(1.2));
+    }
+  }
+  &__menu {
+    padding-top: 18px;
+
+    @include on-tablet {
+      padding-top: 24px;
+      position: absolute;
+      left: 34px;
+      top: 15px;
+    }
+
+    @include on-desctop {
+      left: 55px;
+      top: 15px;
+    }
+  }
+}

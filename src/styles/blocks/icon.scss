@@ -1,0 +1,27 @@
+.icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include hover(transform, scale(1.2));
+
+  &--menu {
+    background-image: url('../images/icons/icon-menu.svg');
+  }
+
+  &--close {
+    background-image: url('../images/icons/icon-close.svg');
+  }
+
+  &--facebook {
+    background-image: url('../images/icons/icon-facebook.png');
+    background-size: contain;
+  }
+
+  &--instagram {
+    background-image: url('../images/icons/icon-instagram.png');
+    background-size: contain;
+  }
+}

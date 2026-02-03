@@ -1,0 +1,97 @@
+.events {
+  margin-top: 70px;
+
+  .event {
+    display: grid;
+
+    @include page-grid;
+
+    margin-bottom: 60px;
+
+    &__link {
+      grid-column: 1/-1;
+
+      @include on-desctop {
+        grid-column: 1/8;
+      }
+    }
+
+    &__info {
+      grid-column: 1/-1;
+      margin-top: 16px;
+      font-size: 16px;
+
+      @include on-tablet {
+        margin-top: 40px;
+        font-size: 14px;
+      }
+
+      @include on-desctop {
+        grid-column: 9/-1;
+        align-self: center;
+      }
+    }
+
+    &__type-date {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+
+      @include on-tablet {
+        justify-content: start;
+        gap: 28px;
+        margin-bottom: 30px;
+      }
+    }
+
+    &__type {
+      font-weight: 500;
+      text-transform: uppercase;
+      color: $main-placeholder-color;
+    }
+
+    &__date {
+      font-weight: 700;
+      line-height: 150%;
+      color: $green-accent-color;
+    }
+
+    &__title {
+      font-family: Montserrat, serif;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 100%;
+      color: $black-accent-color;
+      display: flex;
+      align-items: center;
+      margin-bottom: 11px;
+
+      &::after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        margin-left: 16px;
+        background-color: $red-accent-color;
+
+        @include on-tablet {
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+      @include on-tablet {
+        font-size: 36px;
+        line-height: 100%;
+        margin-bottom: 15px;
+      }
+    }
+
+    &__text {
+      color: $text-color;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 150%;
+    }
+  }
+}
