@@ -4,10 +4,10 @@ A **static landing page for a museum website**, built with HTML and CSS.
 The project focuses on creating a visually structured layout, working with sections, images, and typography, as well as practicing responsive design basics.
 
 ## 🔗 Live Preview
-    - [DEMO LINK](https://oberezhnay.github.io/landing-page-museum-2/)
+  - [DEMO LINK](https://oberezhnay.github.io/landing-page-museum-2/)
 
 ## 🎨 Design Reference
-    - [FIGMA DESIGN](https://www.figma.com/design/cRBCqE06cDrY3s4jX7h3iY/%D0%9D%D0%90%D0%9C%D0%A3--Edit-?node-id=0-1&p=f&t=PwlLKTcMVqdUqfS8-0)
+  - [FIGMA DESIGN](https://www.figma.com/design/cRBCqE06cDrY3s4jX7h3iY/%D0%9D%D0%90%D0%9C%D0%A3--Edit-?node-id=0-1&p=f&t=PwlLKTcMVqdUqfS8-0)
 
 ## 🛠 Technologies Used
 
